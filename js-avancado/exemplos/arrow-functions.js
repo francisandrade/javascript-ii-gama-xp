@@ -1,15 +1,15 @@
 // function
 
-function soma(a,b) {
+/* function soma(a,b) {
     return a + b
-}
+} */
 
-console.log(soma(3,5)) //8
+// console.log(soma(3,5)) //8
 
 //arrow function
 
-const soma = (num1, num2) => num1 + num2
+const soma = (num1, num2) => num1 + num2  // Menos Verbosa
 
 const sayHello = name => `Hello ${name}`
 
-console.log(sayHello('Mari'))
+console.log(soma(10, 5))

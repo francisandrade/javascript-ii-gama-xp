@@ -1,3 +1,4 @@
+// Array de objetos, nesse caso filmes. - parecido com JSON
 const filmes = [
     { 
         id: 1,
@@ -19,6 +20,8 @@ const filmes = [
     },
 ]
 
-const [{id, titulo, descricao, duracao}]  = filmes
+// Desestruturando o array e cada objeto
+const [{id, titulo, descricao, duracao}] = filmes
 
+// acessando as descrições dos filmes
 filmes.map(filme => console.log(filme.descricao))

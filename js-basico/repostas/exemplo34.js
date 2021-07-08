@@ -3,20 +3,17 @@
 // - Se a media for maior e igual a cinco e menor que 7 - Recuperação
 // - Se a media for menor que 5 - Reprovado|
 
-function calculaMedia(nota1,nota2,nota3) {
-    let media = (nota1 + nota2 + nota3)/3
-
-    if (media >= 7) {
-        return 'Aprovado'
-    }
-
-    if (media >=5 && media<7) {
-        return 'Recuperação'
-    }
-
-    if (media < 5) {
-        return 'Reprovado'
+function mediaAluno(nota1, nota2, nota3) {
+    let media = ((nota1 + nota2 + nota3) / 3)
+    if (media >= 7 && media <= 10) {
+        return "Aprovado";
+    } else if (media >= 5 && media < 7) {
+        return "Recuperação"
+    } else if (media < 5 && media >= 0) {
+        return "Reprovado"
+    } else {
+        return "Nota Inválida"
     }
 }
 
-console.log(calculaMedia(8,5,8))
+console.log(mediaAluno(-1, -10, -10))
